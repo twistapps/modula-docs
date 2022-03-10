@@ -1,4 +1,6 @@
 docs:
+  - title: Overview
+    url: /overview
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
