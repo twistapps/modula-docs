@@ -1,26 +1,23 @@
 ---
-layout: default
-title: Overview
-nav_order: 10
+layout: single
+author_profile: true
+author: Twist Apps
+permalink: /
 
 sidebar:
-  nav: "docs"
+  nav: "front"
+  
+toc: true
+toc_sticky: true
 ---
 
-# Navigation Structure
+# Overview
 
 {: .no_toc }
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
 ---
+
+![logo](https://user-images.githubusercontent.com/26601205/157171576-6774cfdf-e63d-484e-a954-60717e3eb3ad.png)
 
 # What is Modula?
 Modula provides some base classes which you could derive from instead of `MonoBehaviour`,
@@ -38,7 +35,7 @@ Fairly the idea's not entirely fresh and new, but I tried to find
 a new perspective on the concept to solve common engineering bottlenecks in Unity.
 
 ## How to use, step-by-step
-- make your MonoBehaviour a `ModularBehaviour` instead and take advantage of `Modules`.
+- make your first `ModularBehaviour` and take advantage of `Modules`.
 
 Just derive from `ModularBehaviour` instead of `MonoBehaviour`:
     
@@ -124,17 +121,17 @@ By design it means these modules can be attached to `GameObject` with that behav
 Yeah, it's that simple! Now you have an **Engine** that can (but is not required to) be attached to a **Car**.
 
 
-###### Important to note, that
+### Important to note, that
 the implementation above is a _bare minimum_ to make your first ModularBehaviour, but there are a lot more features to enjoy:
 - [Requiring other modules for module]
 - [ModuleUpdate() is like an optimized Update()]
 - [Make handy serializable properties with DataLayers]
 
-#### For those who like promotional texts
+### For those who like promotional texts
 Modula brings flexibility into your workflow, nudging you to better isolate each part of your codebase.
 If you ever wanted to split up **that large class** which implements every feature of your over-engineered first person controller, Modula could be the solution.
 
-##### Declarative naming
+### Declarative naming
 
 Modula is not only a framework, it's a set of recommendations if you wish that makes you more productive and creative, [because].
 

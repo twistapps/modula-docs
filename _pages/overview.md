@@ -1,36 +1,30 @@
 ---
-layout: default
-title: Overview
-nav_order: 10
+layout: single
+author_profile: true
+author: Twist Apps
+permalink: /
 
 sidebar:
-  nav: "docs"
+  nav: "front"
   
 toc: true
 toc_sticky: true
 ---
 
-# Navigation Structure
+# Overview
 
 {: .no_toc }
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
 ---
 
-# What is Modula?
+![logo](https://user-images.githubusercontent.com/26601205/157171576-6774cfdf-e63d-484e-a954-60717e3eb3ad.png)
+
+## What is Modula?
 Modula provides some base classes which you could derive from instead of `MonoBehaviour`,
 so you can take advantage of _modular approach_ as we see it.
 Also provides you with some useful hacks, optimization features and, whatever.
 
-## Backstory
+### Backstory
 For a long time I tried to find a multipurpose solution/framework to make my codebase 
 **divided** (therefore, less coupled) as much as possible.
 But there was nothing that could exactly fit the vision. 
@@ -40,8 +34,8 @@ a simple framework based on that idea.
 Fairly the idea's not entirely fresh and new, but I tried to find 
 a new perspective on the concept to solve common engineering bottlenecks in Unity.
 
-## How to use, step-by-step
-- make your MonoBehaviour a `ModularBehaviour` instead and take advantage of `Modules`.
+### How to use, step-by-step
+- make your first `ModularBehaviour` and take advantage of `Modules`.
 
 Just derive from `ModularBehaviour` instead of `MonoBehaviour`:
     
@@ -80,7 +74,7 @@ Just derive from `ModularBehaviour` instead of `MonoBehaviour`:
 - use custom editor for any new `Car` you create to choose which modules that instance of a car supports:
 ![image](~/resources/ModuleDependencies.png)
 
-## The problem
+### The problem
 Imagine you have `MonoBehaviour` that represents a car 
 which could accelerate and break, switch gears and turn.
 
@@ -97,7 +91,7 @@ in a single **Car** class, you need a way to split it up into `'modules'`:
 >**But** we decided to publish Modula because we believe:
 > some people will love our approach <3
 
-## The Solution
+### The Solution
  Modula implements new `ModularBehaviour` class which extends `MonoBehaviour`,
  so you can derive from it to make a new entity with support of _modular structure_:
  
@@ -127,7 +121,7 @@ By design it means these modules can be attached to `GameObject` with that behav
 Yeah, it's that simple! Now you have an **Engine** that can (but is not required to) be attached to a **Car**.
 
 
-###### Important to note, that
+#### Important to note, that
 the implementation above is a _bare minimum_ to make your first ModularBehaviour, but there are a lot more features to enjoy:
 - [Requiring other modules for module]
 - [ModuleUpdate() is like an optimized Update()]
@@ -137,11 +131,11 @@ the implementation above is a _bare minimum_ to make your first ModularBehaviour
 Modula brings flexibility into your workflow, nudging you to better isolate each part of your codebase.
 If you ever wanted to split up **that large class** which implements every feature of your over-engineered first person controller, Modula could be the solution.
 
-##### Declarative naming
+#### Declarative naming
 
 Modula is not only a framework, it's a set of recommendations if you wish that makes you more productive and creative, [because].
 
-### Now actually, a boring technical explanation
+#### Now actually, a boring technical explanation
 After [setting up modula](installation.md) you now have a new base class to derive from, called ModularBehaviour.
 It extends MonoBehaviour, that means you could still use `Awake()`, `Start()`, `Update()`, etc.
 
@@ -168,7 +162,7 @@ It extends MonoBehaviour, that means you could still use `Awake()`, `Start()`, `
     }
 
 
-## Denial of responsibility
+### Denial of responsibility
 Currently this is an early stage of the project, so there's no LTS version or whatever, so I encourage you to use it
 only if you're ready to wait a couple of months so Modula gets into its better shape and really begins to shine.
 OR if you wanna help developing it, I would be happy seeing any [issues] you publish or pull requests.
