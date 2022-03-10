@@ -1,8 +1,8 @@
 Twist Apps:
-  #name        : "Twist Apps"
+  name        : "Twist Apps"
   #bio         : "...by Twist! Apps"
   #avatar      : "/assets/img/twist-avatar.png"
-  #avatar      : "/assets/img/TwistAppsDevLogo.png"
+  avatar      : "/assets/img/TwistAppsDevLogo.png"
   links:
     - label: "Github"
       icon: "fab fa-fw fa-github"
