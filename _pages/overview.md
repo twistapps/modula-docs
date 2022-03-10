@@ -5,6 +5,9 @@ nav_order: 10
 
 sidebar:
   nav: "docs"
+  
+toc: true
+toc_sticky: true
 ---
 
 # Navigation Structure

@@ -2,6 +2,9 @@
 layout: default
 title: Overview
 nav_order: 10
+
+sidebar:
+  nav: "docs"
 ---
 
 # Navigation Structure
