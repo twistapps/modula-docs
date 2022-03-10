@@ -10,12 +10,7 @@ sidebar:
 toc: true
 toc_sticky: true
 ---
-
-# Overview
-
 {: .no_toc }
-
----
 
 ![logo](https://user-images.githubusercontent.com/26601205/157171576-6774cfdf-e63d-484e-a954-60717e3eb3ad.png)
 

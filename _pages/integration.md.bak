@@ -3,8 +3,8 @@ layout: single
 author_profile: false
 permalink: /integration
 
-#sidebar:
-#  nav: "docs"
+sidebar:
+  nav: "docs"
   
 toc: true
 toc_sticky: true
