@@ -2,28 +2,11 @@
 layout: single
 author_profile: false
 permalink: /integration
-
-sidebar:
-  nav: "docs"
-  
-toc: true
-toc_sticky: true
----
-
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
 ---
 
 Modula supports easy integration for any type that extends `MonoBehaviour`.
 
-#Supported by Default
+# Supported by Default
 These are integrations with 3rd party packages that are supported out-of-the-box: 
 ## Mirror
 [Mirror](https://mirror-networking.com/) is an Open Source Networking library for Unity.

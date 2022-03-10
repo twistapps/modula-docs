@@ -3,14 +3,20 @@ docs:
     children:
         - title: About
           url: /
-        - title: Quick Start
         - title: Installation
+          url: /install
+        - title: Quick Start
+          url: /quick-start
+  - title: Examples
+    children:
+        - title: Modules with Mirror Networking support
+          url: /examples/mirror
   - title: 3rd Party Integration
     children:
       - title: Integrating Other Assets
         url: /integration
       - title: Mirror Networking
-        url: /integration/#mirror
+        url: /integration/mirror
 example:
   - title: Overview
     url: /overview

@@ -1,14 +1,18 @@
 ---
 title: "Overview"
-permalink: /
-excerpt: "Overview of Modula - framework imagined to go modular."
+permalink: /uwu
+excerpt: "Modula package brings the concept of Modular Entities into Unity Engine."
 
 author_profile: true
 author: Twist Apps
 ---
 
-Modula package brings the concept of Modular Entities into Unity Engine.
+Modula is a package for Unity Engine that brings in the concept of **Modular Entities**.
+
+---
 ![logo](https://user-images.githubusercontent.com/26601205/157171576-6774cfdf-e63d-484e-a954-60717e3eb3ad.png)
+
+---
 
 When needed, inherit from `ModularBehaviour` instead of Unity's default `MonoBehaviour` class.
 This lets you **split** all the logic inside your behaviour and **move** it into independent modules, which could later be connected to/removed from each instance of that behaviour, using the inspector GUI:
