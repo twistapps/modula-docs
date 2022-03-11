@@ -1,4 +1,5 @@
 ---
+
 title: What is Modula?
 permalink: /
 excerpt: "Modula package brings the concept of Modular Entities into Unity Engine."
@@ -7,6 +8,7 @@ author_profile: true
 author: Twist Apps
 
 install_instructions: common/installation/recommended.md
+
 ---
 
 Modula is a package for [Unity Engine](https://unity.com) that helps 
@@ -19,7 +21,7 @@ splitting your code into smaller independent parts.
 ---
 
 When needed, inherit from `ModularBehaviour` instead of Unity's default `MonoBehaviour` class.
-This lets you **split** all the logic inside your component and **move** it 
+This lets you **split** all the logic inside of your component and **move** it 
 into independent modules, 
 which could later be connected to/removed from each instance of that component, 
 using the inspector GUI:
@@ -32,7 +34,7 @@ That way by distributing the code into small self-containing modules you could m
 
 The final gameobject designed using Modula should consist of these components:
 
-- Main behaviour script
+- **[Main](/module-features#main-)** behaviour script
 
     
     {% highlight C# %}// Main Behaviour

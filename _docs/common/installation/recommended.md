@@ -17,7 +17,7 @@ We recommend using it as [Unity Package Manager (UPM)](https://docs.unity3d.com/
 Download updates right when they're ready and published
 - **"Under the Hood"** usage: no code in your `Assets/` folder at all.
 
-con: Not so straightforward to dig into the source code because it's hidden in
+**con**: it's not so straightforward to dig into the source code because it's hidden in
 `Packages/` folder.
 
 Choose this method if you want Modula to work under the hood without littering your `Assets/` folder.

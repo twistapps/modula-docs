@@ -22,11 +22,11 @@ Choose this method if you want to experiment with Modula's sources yourself.
 
 ### Methods Comparison
 
-| Feature                                                           | UPM Git | Asset Store | Manual |
-|-------------------------------------------------------------------|---------|-------------|--------|
-| Updates using [UPM](https://docs.unity3d.com/Manual/upm-ui.html)  |    ✅   |      ✅      |   ❌   |
-| Shown in Assets/ folder                                           |    ❌   |      ✅      | [depends](#3-manual-installation) |
-| Easy to edit source                                               |    ❌   |      ✅      |   ✅  |
+| Feature                                                              | UPM Git | Asset Store | Manual                            |
+|----------------------------------------------------------------------|---------|-------------|-----------------------------------|
+| Get updates using [UPM](https://docs.unity3d.com/Manual/upm-ui.html) | ✅       | ✅           | ❌                                 |
+| Shown in Assets/ folder                                              | ❌       | ✅           | [depends](#3-manual-installation) |
+| Easy to edit sources                                                 | ❌       | ✅           | ✅                                 |
 {: .text-center}
 
 Basically, if you don't want to dig deeper into Modula's source, use the first method. 
