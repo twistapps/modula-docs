@@ -5,7 +5,7 @@ We recommend using it as [Unity Package Manager (UPM)](https://docs.unity3d.com/
 ### 1. Recommended Method `(UPM Git Dependency)`
 - In Unity, go to _Window_ ▶ _Package Manager_
 - Click **"+"** ▶ _Add Package from Git URL..._
-- Paste this line: `https://github.com/twistapps/modula.git`
+- Paste this link: `https://github.com/twistapps/modula.git`
 - Wait for unity to download the package for you!
 
 [![](/assets/img/modula-installation-git.gif)](/assets/img/modula-installation-git.gif)

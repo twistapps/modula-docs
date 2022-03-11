@@ -6,47 +6,49 @@ we got you!
 
 Simply derive from `NetworkModule` instead of `Module` for the seampless Mirror - Modula integration:
 
-    public class Shooting : NetworkModule
+{% highlight C# %}
+public class Shooting : NetworkModule
+{
+    [SyncVar] public bool isShooting;
+
+    public override TypeList RequiredOtherModules { get; } = new TypeList()
+        .Add(typeof(Turret));
+        
+    private RigidBody _rb;
+
+    public override void Awake()
     {
-        [SyncVar] public bool isShooting;
-    
-        public override TypeList RequiredOtherModules { get; } = new TypeList()
-            .Add(typeof(Turret));
-            
-        private RigidBody _rb;
-    
-        public override void Awake()
-        {
-            base.Awake();
-            _rb = GetComponent<Rigidbody>();
-        }
-    
-        private void Update()
-        {
-            if (isLocalPlayer)
-            {
-                var shootingButtonPressed = Input.GetMouseButton(0);
-                if (!isShooting && shootingButtonPressed)
-                    CmdSetShooting(true);
-                else if (isShooting && !shootingButtonPressed) CmdSetShooting(false);
-            }
-    
-            if (isServer) HandleShooting();
-        }
-    
-        [Command]
-        public void CmdSetShooting(bool shooting)
-        {
-            isShooting = shooting;
-        }
-    
-        [Server]
-        public void HandleShooting()
-        {
-            if (!isShooting) return;
-            SpawnBullet( ... );
-        }
+        base.Awake();
+        _rb = GetComponent<Rigidbody>();
     }
+
+    private void Update()
+    {
+        if (isLocalPlayer)
+        {
+            var shootingButtonPressed = Input.GetMouseButton(0);
+            if (!isShooting && shootingButtonPressed)
+                CmdSetShooting(true);
+            else if (isShooting && !shootingButtonPressed) CmdSetShooting(false);
+        }
+
+        if (isServer) HandleShooting();
+    }
+
+    [Command]
+    public void CmdSetShooting(bool shooting)
+    {
+        isShooting = shooting;
+    }
+
+    [Server]
+    public void HandleShooting()
+    {
+        if (!isShooting) return;
+        SpawnBullet( ... );
+    }
+}
+{% endhighlight %}
     
 All the attributes etc will work as if you were just using NetworkBehaviour.
 
