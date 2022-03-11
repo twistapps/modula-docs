@@ -1,5 +1,4 @@
 ﻿
-## Mirror
 [Mirror](https://mirror-networking.com/) is an Open Source Networking library for Unity.
 
 If you want to support all of the `Mirror's` **NetworkBehaviour** features in your modules,

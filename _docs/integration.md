@@ -14,6 +14,7 @@ Modula supports easy integration for any type that extends `MonoBehaviour`.
 # Supported by Default
 These are integrations with 3rd party packages that are supported out-of-the-box: 
 
+## Mirror
 {% if page.integr_mirror %}
   {% include_relative {{ page.integr_mirror }} %}
 {% endif %}
