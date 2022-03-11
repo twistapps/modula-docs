@@ -6,7 +6,7 @@ excerpt: "Modula package brings the concept of Modular Entities into Unity Engin
 author_profile: true
 author: Twist Apps
 
-install_instructions: common/installation.md
+install_instructions: common/installation/recommended.md
 ---
 
 Modula is a package for [Unity Engine](https://unity.com) that helps 
@@ -60,26 +60,12 @@ The final gameobject designed using Modula should consist of these components:
   {% include_relative {{ page.install_instructions }} %}
 {% endif %}
 
-## Best Practices
+There are other installation methods listed at [**"Installation"** page](/install#2-download-from-asset-store).
+{: .notice}
 
-#### Modules
+### Updating
+Check out the [full page](/install#updating) to read the update instructions.
 
-##### Require any other module(s)
-If your module requires other module(s) to work properly,
-just set the `RequiredOtherModules` property as in the example:
-
-    {% highlight C# %}public class WithDependencies : Module {
-        public override TypeList RequiredOtherModules { get; } 
-        = new TypeList()
-            .Add(typeof(ModuleFoo))
-            .Add(typeof(ModuleBar));
-    }{% endhighlight %}
-
-##### Require any unity Component 
-If your module requires some unity Component(s) to work properly,
-just use the `RequireComponent()` attribute:
-
-    {% highlight C# %}[RequireComponent(typeof(Rigidbody))]
-    public class BallPhysics : Module {
-        ...
-    }{% endhighlight %}
+---
+# Next Steps
+Code your first module by following **[Quick Start](/quick-start) instructions**.

@@ -7,6 +7,16 @@ docs:
           url: /install
         - title: Quick Start
           url: /quick-start
+  - title: Features
+    children:
+      - title: DataLayer
+        url: /data-layer #todo
+      - title: TimingConstraints
+        url: /timing-constraints #todo
+  - title: Optimization
+    children:
+      - title: Runtime Optimization Guide
+        url: /optimization #todo
   - title: Examples
     children:
         - title: Modules with Mirror Networking support
@@ -16,7 +26,7 @@ docs:
       - title: Integrating Other Assets
         url: /integration
       - title: Mirror Networking
-        url: /integration/mirror
+        url: /integration-mirror
 example:
   - title: Overview
     url: /overview

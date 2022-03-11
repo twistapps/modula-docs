@@ -5,11 +5,6 @@ excerpt: "How to take off fast!"
 
 author_profile: false
 author: Twist Apps
-
-install_instructions: common/installation.md
 ---
 
-## Installation
-{% if page.install_instructions %}
-  {% include_relative {{ page.install_instructions }} %}
-{% endif %}
+After [adding Modula to your project](/install), it's time to make your first module!

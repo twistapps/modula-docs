@@ -1,67 +1,19 @@
 ---
-layout: single
-author_profile: false
+title: Integration
 permalink: /integration
+excerpt: "How to add integrate 3rd party packages with Modula."
+
+author_profile: false
+author: Twist Apps
+
+integr_mirror: common/integrations/mirror.md
 ---
 
 Modula supports easy integration for any type that extends `MonoBehaviour`.
 
 # Supported by Default
 These are integrations with 3rd party packages that are supported out-of-the-box: 
-## Mirror
-[Mirror](https://mirror-networking.com/) is an Open Source Networking library for Unity.
 
-If you want to support all of the `Mirror's` **NetworkBehaviour** features in your modules,
-we got you!
-
-Simply derive from `NetworkModule` instead of `Module` for the seampless Mirror - Modula integration:
-
-    public class Shooting : NetworkModule
-    {
-        [SyncVar] public bool isShooting;
-    
-        public override TypeList RequiredOtherModules { get; } = new TypeList()
-            .Add(typeof(Turret));
-            
-        private RigidBody _rb;
-    
-        public override void Awake()
-        {
-            base.Awake();
-            _rb = GetComponent<Rigidbody>();
-        }
-    
-        private void Update()
-        {
-            if (isLocalPlayer)
-            {
-                var shootingButtonPressed = Input.GetMouseButton(0);
-                if (!isShooting && shootingButtonPressed)
-                    CmdSetShooting(true);
-                else if (isShooting && !shootingButtonPressed) CmdSetShooting(false);
-            }
-    
-            if (isServer) HandleShooting();
-        }
-    
-        [Command]
-        public void CmdSetShooting(bool shooting)
-        {
-            isShooting = shooting;
-        }
-    
-        [Server]
-        public void HandleShooting()
-        {
-            if (!isShooting) return;
-            SpawnBullet( ... );
-        }
-    }
-    
-All the attributes etc will work as if you were just using NetworkBehaviour.
-
-All the Modula's features are still supported tho! Such as ModuleUpdate()
-
-#Important Notices
-While migrating to `NetworkModule` from `NetworkBehaviour`, don't forget to override Awake()
-and put base.Awake() to use [optimization features](optimizations.md).
+{% if page.integr_mirror %}
+  {% include_relative {{ page.integr_mirror }} %}
+{% endif %}
