@@ -1,3 +1,7 @@
+main:
+  - title: "Changelog"
+    url: https://github.com/twistapps/modula/blob/main/CHANGELOG.md
+
 docs:
   - title: Getting Started
     children:
@@ -7,6 +11,7 @@ docs:
           url: /install
         - title: Quick Start
           url: /quick-start
+  
   - title: Features
     children:
       - title: Modular Behaviour
@@ -17,6 +22,7 @@ docs:
 #        url: /data-layer #todo
       - title: TimingConstraints
         url: /timing-constraints
+
 #  - title: Optimization
 #    children:
 #      - title: Runtime Optimization Guide
@@ -25,6 +31,7 @@ docs:
 #    children:
 #        - title: Modules with Mirror Networking support
 #          url: /examples/mirror
+
   - title: 3rd Party Integration
     children:
       - title: Integrating Other Assets
@@ -38,49 +45,3 @@ docs:
         url: /known-bugs
       - title: License
         url: /license
-example:
-  - title: Overview
-    url: /overview
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/

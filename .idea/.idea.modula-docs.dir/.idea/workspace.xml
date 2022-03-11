@@ -20,31 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e9d167-3c23-420f-bf1a-08a8762d10c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_docs/4-modular-behaviour-features.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/5-module-features.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/7-timing-constraints.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/8-integration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/9-integration-mirror.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/91-known-bugs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_docs/92-license.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/modular-example.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpright/Copyright.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpright/license.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.modula-docs.dir/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/1-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/_docs/1-overview.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/3-quick-start.md" beforeDir="false" afterPath="$PROJECT_DIR$/_docs/3-quick-start.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/common/installation/other-methods.md" beforeDir="false" afterPath="$PROJECT_DIR$/_docs/common/installation/other-methods.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/common/installation/recommended.md" beforeDir="false" afterPath="$PROJECT_DIR$/_docs/common/installation/recommended.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/integration-mirror.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/integration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_docs/timing-constraints.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.markdown.bak" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646971203213</updated>
       <workItem from="1646971203868" duration="1077000" />
-      <workItem from="1646987880473" duration="11555000" />
+      <workItem from="1646987880473" duration="12339000" />
     </task>
     <servers />
   </component>
